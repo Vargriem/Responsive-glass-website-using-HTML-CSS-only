@@ -89,20 +89,31 @@ nav ul li a:hover{
 .content .image img{
     width: 300px;
 }
-@media (min-width:950px) and (max-width:1150px){
+@media (min-width:951px) and (max-width:1150px){
     .content .image img{
-        width: 330px;
+        width: 250px;
+        position:absolute;
+        right: 220px;
+        top: 300px;
     }
-} 
+    }
 @media (max-width:950px){
     .content, nav{
-        flex-direction:column;
-        justify-content:center;
+        flex-direction:row;
+        justify-content:baseline;
     }
-    .content .image, .content .text{
-        width: 100%;
+    .content .image{
+        width: 150px;
+        position:absolute;
+        right: 240px;
+        top: 360px;
     }
+     .content .text{
+        display: block;
+         margin-top: -25%;
+
+     }
     body::after{
-        clip-path: circle(45% at bottom);
+        clip-path: circle(38% at bottom);
     }
 }
